@@ -5,6 +5,17 @@ module.exports = defineConfig({
   pluginOptions: {
     vuetify: {
 			// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
+      theme: {
+        options: {
+          customProperties: true
+        },
+        light: true,
+        themes: {
+          light: {
+            background: '#EBE5D2',
+          }
+        }
+      }
 		}
   }
 })
