@@ -8,7 +8,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn class="navbar-btn">
+      <v-btn to="/about" class="navbar-btn">
         ABOUT
       </v-btn>
 
@@ -23,7 +23,7 @@
       <v-btn class="navbar-btn">
         TRAILER
       </v-btn>
-      <v-btn class="navbar-btn">
+      <v-btn to="/contact" class="navbar-btn">
         CONTACT
       </v-btn>
     </v-toolbar>

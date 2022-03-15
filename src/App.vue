@@ -3,7 +3,7 @@
     <v-app style="overflow: hidden; height: 100%">
     <v-main>
       <NavBar/>
-      <AboutView/>
+      <router-view></router-view>
     </v-main>
   </v-app>
   </div>
@@ -11,13 +11,11 @@
 
 <script>
 import NavBar from '@/components/Navbar.vue'
-import AboutView from '@/views/AboutView.vue'
 export default {
   name: 'App',
 
   components: {
     NavBar,
-    AboutView,
   },
 
   data: () => ({
