@@ -1,25 +1,23 @@
 <template>
     <div>
-        <v-container >
+        <v-container>
           <v-row>
-          <v-img src="@/assets/Stern.png" class="bgimg"></v-img>
+          <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
           <div class="about-text">
-            <br>
-          <br>
           <p>
-            The emergence of man was mere coincidence.
-          </p>
-          <p>
-            Evolving from fish and having become comical apes, we give ourselves and small everyday situations around us an absurd amount of importance. Dressed in clothes, sitting at an office chair, we try to give ourselves meaning and create a world for ourselves in which we have importance. We take everything far too seriously, from everyday embarrassments to invented systems into which we willingly place ourselves.
-          </p>
-          <br>
-          
-          <p>
-            <span style="font-family: Migra; color: #FF5808">Peak of Evolution</span>
-             explores the systems, rituals and customs we have created to follow a preconceived path that gives us meaning and sets us apart from „mere animals“. As humanity, we have glorified ourselves and taken human narcissism to the extreme.
+            Gefällt dir was du siehst oder willst einfach mit uns quatschen? Schreib uns!
           </p>
           </div>
           </v-row>
+          <v-row class="justify-center" >
+            <a class="email" href="mailto:poe.masterprojekt@gmail.com">
+              <div>
+                poe.masterprojekt@gmail.com
+              </div>
+              
+            </a>
+          </v-row>
+          <v-img src="@/assets/Stern.png" class="bgimg-2 rotating"></v-img>
         </v-container>
     </div>
 </template>
@@ -34,29 +32,125 @@ export default {
 </script>
 <style scoped>
 .bgimg {
-  width: 350px;
-  height: 350px;
+  width: 480px;
+  max-height: 480px;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin-top: 110px;
-  margin-left: 200px;
+  margin-top: 100px;
+  margin-left: 10%;
   z-index: 1;
-  
-
 }
-
+.bgimg-2 {
+  width: 480px;
+  max-height: 480px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 550px;
+  margin-left: 80%;
+  z-index: 1;
+}
 .about-text {
   position: absolute;
+  font-size: 35px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin-top: 200px;
-  margin-left: 375px;
-  margin-right: 50px;
+  margin-top: 340px;
+  margin-left: calc(10% + 240px);
+
   z-index: 5;
 }
+.email {
+  z-index:9999999;
+  margin-top: 40vh;
+
+  font-size: 50px;
+  font-family: Migra; 
+  color: #FF5808
+}
+
+
+@media (max-width:600px) {
+
+.about-text {
+  margin-top: 200px;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.bgimg {
+  width: 70%;
+  height: 70%;
+  margin-top: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.bgimg-2 {
+  width: 70%;
+  height: 70%;
+  margin-top: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.email {
+
+  font-size: 20px;
+}
+
+}
+
+@media (max-width:800px) {
+.email{
+  font-size: 30px;
+}
+}
+
+@keyframes rotating
+    {
+    from
+        {
+        transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        }
+    to
+        {
+        transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        }
+    }
+@-webkit-keyframes rotating
+    {
+    from
+        {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        }
+    to
+        {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        }
+    }
+.rotating
+    {
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
+    }
 </style>
