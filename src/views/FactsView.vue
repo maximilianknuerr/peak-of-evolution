@@ -55,7 +55,7 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  margin-top: 40px;
+  margin-top: 70px;
   margin-left: calc(10% + 240px);
 
   z-index: 5;
