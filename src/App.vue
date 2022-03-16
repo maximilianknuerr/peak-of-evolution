@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-app style="overflow: hidden; height: 100%">
+    <v-app>
     <v-main>
       <NavBar/>
       <router-view></router-view>
@@ -39,6 +39,7 @@ export default {
      font-size: 20px;
      background-color: #EBE5D2;
      min-height: 100vh;
+     padding: 0% !important;
 }
 
 </style>

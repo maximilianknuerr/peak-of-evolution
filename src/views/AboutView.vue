@@ -1,8 +1,8 @@
 <template>
     <div>
-        <v-container >
+        <v-container>
           <v-row>
-          <v-img src="@/assets/Stern.png" class="bgimg"></v-img>
+          <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
           <div class="about-text">
             <br>
           <br>
@@ -34,7 +34,7 @@ export default {
 <style scoped>
 .bgimg {
   width: 350px;
-  height: 350px;
+  max-height: 350px;
   position: absolute;
   top: 0;
   right: 0;
@@ -52,9 +52,69 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  margin-top: 170px;
+  margin-top: 165px;
   margin-left: calc(15% + 175px);
   margin-right: 50px;
   z-index: 5;
 }
+
+@media (max-width:600px) {
+
+.about-text {
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.bgimg {
+  width: 70%;
+  height: 70%;
+  margin-top: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+}
+
+
+@keyframes rotating
+    {
+    from
+        {
+        transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        }
+    to
+        {
+        transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        }
+    }
+@-webkit-keyframes rotating
+    {
+    from
+        {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        }
+    to
+        {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        }
+    }
+.rotating
+    {
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
+    }
 </style>
