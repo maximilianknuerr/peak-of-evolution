@@ -5,7 +5,7 @@
           <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
           <div class="about-text">
           <p>
-            Gefällt dir was du siehst oder willst einfach mit uns quatschen? Schreib uns!
+            Like what you see? Want to chat? Feel free to contact us!
           </p>
           </div>
           </v-row>
