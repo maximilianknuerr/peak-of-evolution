@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <v-app>
-    <v-main>
+      <splash-screen v-if="isSplash" :isSplash="isSplash"></splash-screen>
+    <v-main v-if="!isSplash">
       <NavBar/>
       <router-view></router-view>
     </v-main>
@@ -11,16 +12,24 @@
 
 <script>
 import NavBar from '@/components/Navbar.vue'
+import SplashScreen from '@/components/SplashScreen.vue'
 export default {
   name: 'App',
 
   components: {
     NavBar,
+    SplashScreen
   },
 
   data: () => ({
-    //
+    isSplash: true,
   }),
+  created() {
+    setTimeout(() => {
+      this.isSplash = false
+    }, 2000)
+  }
+
 }
 </script>
 <style>
