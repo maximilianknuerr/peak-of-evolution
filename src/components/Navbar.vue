@@ -10,24 +10,24 @@
       <v-spacer></v-spacer>
 
       <div v-if="!isMobile">
-        <v-btn to="/about" class="navbar-btn">
-          ABOUT
-        </v-btn>
+        <router-link to="/about" class="navbar-btn" active-link="active">
+        <v-icon class="dot" color="#FF5808" size="70px">mdi-circle-small</v-icon>ABOUT
+        </router-link>
 
-        <v-btn to="/facts" class="navbar-btn">
-          FACTS
-        </v-btn>
+        <router-link to="/facts" class="navbar-btn"  active-class="active">
+        <v-icon class="dot" color="#FF5808" size="70px">mdi-circle-small</v-icon>FACTS
+        </router-link>
 
-        <v-btn to="/team" class="navbar-btn">
-          TEAM
-        </v-btn>
+        <router-link to="/team" class="navbar-btn"  active-class="active">
+        <v-icon class="dot" color="#FF5808" size="70px">mdi-circle-small</v-icon>TEAM
+        </router-link>
 
-        <v-btn to="/trailer" class="navbar-btn">
-          TRAILER
-        </v-btn>
-        <v-btn to="/contact" class="navbar-btn">
-          CONTACT
-        </v-btn>
+        <router-link to="/trailer" class="navbar-btn">
+        <v-icon class="dot" color="#FF5808" size="70px">mdi-circle-small</v-icon>TRAILER
+        </router-link>
+        <router-link to="/contact" class="navbar-btn">
+        <v-icon class="dot" color="#FF5808" size="70px">mdi-circle-small</v-icon>CONTACT
+        </router-link>
       </div>
 
       <v-btn v-if="isMobile" @click.stop="menu = !menu">
@@ -62,7 +62,21 @@ export default {
 }
 </script>
 <style scoped>
+  .dot {
+    display: none;
+  }
+  .active .dot{
+
+    display: inline-flex;
+  }
   .navbar-btn{
     font-size: 30px;
+    font-family: "DMSans";
+    text-decoration: none;
+    color: #000000;
+    padding: 15px;
+  }
+  .active{
+    color: #FF5808;
   }
 </style>
