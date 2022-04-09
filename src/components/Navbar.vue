@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-app-bar height=100 color="rgba(235, 229, 210, 1)" class="navbar" fixed app elevation=0>
+    <v-app-bar height=130 color="rgba(235, 229, 210, 1)" class="navbar" fixed app elevation=0>
 
       <v-toolbar-side-icon>
-            <v-img class="mr-3" src="@/assets/logo.png" height="80px" width="80px"> 
+            <v-img class="mr-3 ml-5 mt-7" src="@/assets/logo.png" height="100" width="100"> 
             </v-img>
      </v-toolbar-side-icon>
 
