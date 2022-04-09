@@ -79,7 +79,4 @@ export default {
     color: #000000;
     padding: 15px;
   }
-  .active{
-    
-  }
 </style>
