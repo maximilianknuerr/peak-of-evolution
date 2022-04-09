@@ -10,23 +10,23 @@
       <v-spacer></v-spacer>
 
       <div v-if="!isMobile">
-        <router-link to="/about" class="navbar-btn" active-link="active">
-        <v-icon class="dot" color="#FF5808" size="70px">mdi-circle-small</v-icon>ABOUT
+        <router-link to="/about" class="navbar-btn  text-truncate" active-link="active">
+        <v-icon class="dot" color="#FF5808" size="20">mdi-circle</v-icon>ABOUT
         </router-link>
 
         <router-link to="/facts" class="navbar-btn"  active-class="active">
-        <v-icon class="dot" color="#FF5808" size="70px">mdi-circle-small</v-icon>FACTS
+        <v-icon class="dot" color="#FF5808" size="20">mdi-circle</v-icon>FACTS
         </router-link>
 
         <router-link to="/team" class="navbar-btn"  active-class="active">
-        <v-icon class="dot" color="#FF5808" size="70px">mdi-circle-small</v-icon>TEAM
+        <v-icon class="dot" color="#FF5808" size="20">mdi-circle</v-icon>TEAM
         </router-link>
 
         <router-link to="/trailer" class="navbar-btn">
-        <v-icon class="dot" color="#FF5808" size="70px">mdi-circle-small</v-icon>TRAILER
+        <v-icon class="dot" color="#FF5808" size="20">mdi-circle</v-icon>TRAILER
         </router-link>
         <router-link to="/contact" class="navbar-btn">
-        <v-icon class="dot" color="#FF5808" size="70px">mdi-circle-small</v-icon>CONTACT
+        <v-icon class="dot" color="#FF5808" size="20">mdi-circle</v-icon>CONTACT
         </router-link>
       </div>
 
@@ -64,12 +64,15 @@ export default {
 <style scoped>
   .dot {
     display: none;
+
   }
   .active .dot{
-
+    padding-right: 10px;
     display: inline-flex;
+    color: #FF5808;
   }
   .navbar-btn{
+    width: 1000px;
     font-size: 30px;
     font-family: "DMSans";
     text-decoration: none;
@@ -77,6 +80,6 @@ export default {
     padding: 15px;
   }
   .active{
-    color: #FF5808;
+    
   }
 </style>
