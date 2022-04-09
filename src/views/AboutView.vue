@@ -40,24 +40,23 @@ export default {
   width: 40%;
   height: 40%;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 110px;
+
   bottom: 0;
-  left: 0;
-  margin-top: 110px;
-  margin-left: 15%;
+  left: 5%;
+
   z-index: 1;
 }
 
 .about-text {
   position: relative;
   font-size: 35px;
-  top: 0;
+  top: 165px;
   right: 0;
   bottom: 0;
-  left: 0;
-  margin-top: 165px;
-  margin-left: calc(7% + 175px);
+  left: 17%;
+
+  width: 70%;
   margin-right: 50px;
   z-index: 5;
 }
