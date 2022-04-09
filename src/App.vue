@@ -35,7 +35,7 @@ export default {
 <style>
 @font-face {
   font-family: "DMSans";
-  src: url("fonts/DMSans/DMSans-Regular.ttf");
+  src: url("fonts/DMSans/DMSans-Medium.ttf");
 }
 
 @font-face {
@@ -45,6 +45,7 @@ export default {
 
 .v-application{
      font-family: "DMSans";
+     line-height: 1.36;
      font-size: 20px;
      background-color: #EBE5D2;
      min-height: 100vh;
