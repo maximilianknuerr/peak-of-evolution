@@ -1,17 +1,20 @@
 <template>
     <div>
-        <v-container>
-          <v-row>
-          <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
-          <div class="about-text">
-          <p>
-            With a finished script and an innovative idea, the core team came together in November 2020 and began developing the project. 
-            <span  style="font-family: Migra; color: #FF5808">Peak of Evolution</span> is a CG short film by students of the University of Applied Science Salzburg. Real filmed footage of the sets built in miniature scale is meets digital characters.
-          </p>
-          </div>
-          </v-row>
-          <v-img src="@/assets/Stern.png" class="bgimg-2 rotating"></v-img>
-        </v-container>
+      <v-container class="mr-5 ml-0" style="max-width: 99% !important">
+        <v-row>
+          <v-col cols=12>
+            <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
+            <div class="about-text">
+            <p>
+              With a finished script and an innovative idea, the core team came together in November 2020 and began developing the project. 
+              <span  style="font-family: Migra; color: #FF5808">Peak of Evolution</span> is a CG short film by students of the University of Applied Science Salzburg. Real filmed footage of the sets built in miniature scale is meets digital characters.
+            </p>
+            </div>
+            
+            <v-img src="@/assets/Stern.png" class="bgimg-2 rotating"></v-img>
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
 </template>
 <script>
@@ -49,14 +52,14 @@ export default {
   z-index: 1;
 }
 .about-text {
-  position: absolute;
+  position: relative;
   font-size: 35px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin-top: 70px;
-  margin-left: calc(10% + 240px);
+  margin-top: 50px;
+  margin-left: calc(20% + 240px);
 
   z-index: 5;
 }

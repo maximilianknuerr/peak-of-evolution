@@ -1,21 +1,26 @@
 <template>
     <div>
-        <v-container>
-          <v-row>
+        <v-container  class="mr-0" style="max-width: 100% !important;">
           <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
-          <div class="about-text">
-          <p>
-            Like what you see? Want to chat? Feel free to contact us!
-          </p>
-          </div>
-          </v-row>
-          <v-row class="justify-center" >
-            <a class="email" href="mailto:poe.masterprojekt@gmail.com">
-              <div>
-                poe.masterprojekt@gmail.com
-              </div>
-              
-            </a>
+          <v-row style="margin-top: 10%; margin-left: 15%">
+          
+            <v-col cols=11>
+              <v-row>
+                <div class="about-text">
+                  <p>
+                    Like what you see? Want to chat? Feel free to contact us!
+                  </p>
+                </div>
+              </v-row>
+              <v-row class="justify-center"  style="margin-top: 15%">
+                <a class="email" href="mailto:poe.masterprojekt@gmail.com">
+                  <div>
+                    poe.masterprojekt@gmail.com
+                  </div>
+                </a>
+              </v-row>
+
+            </v-col>
           </v-row>
           <v-img src="@/assets/Stern.png" class="bgimg-2 rotating"></v-img>
         </v-container>
@@ -56,20 +61,20 @@ export default {
   z-index: 1;
 }
 .about-text {
-  position: absolute;
+  position: relative;
   font-size: 35px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin-top: 340px;
-  margin-left: calc(10% + 240px);
+
+  margin-left: 0;
 
   z-index: 5;
 }
 .email {
   z-index:9999999;
-  margin-top: 40vh;
+  margin-top: 5vh;
 
   font-size: 50px;
   font-family: Migra; 
