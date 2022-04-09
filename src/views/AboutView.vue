@@ -37,8 +37,8 @@ export default {
 </script>
 <style scoped>
 .bgimg {
-  width: 350px;
-  max-height: 350px;
+  width: 40%;
+  height: 40%;
   position: absolute;
   top: 0;
   right: 0;

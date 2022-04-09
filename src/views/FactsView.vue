@@ -28,8 +28,8 @@ export default {
 </script>
 <style scoped>
 .bgimg {
-  width: 480px;
-  max-height: 480px;
+  width: 40%;
+  height: 40%;
   position: absolute;
   top: 0;
   right: 0;
@@ -40,14 +40,14 @@ export default {
   z-index: 1;
 }
 .bgimg-2 {
-  width: 480px;
-  max-height: 480px;
+  width: 40%;
+  height: 40%;
   position: absolute;
-  top: 0;
+
   right: 0;
-  bottom: 0;
+  bottom: 5%;
   left: 0;
-  margin-top: 550px;
+
   margin-left: 5%;
   z-index: 1;
 }

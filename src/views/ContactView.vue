@@ -1,10 +1,12 @@
 <template>
     <div>
         <v-container  class="mr-0" style="max-width: 100% !important;">
-          <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
+          
           <v-row style="margin-top: 10%; margin-left: 15%">
+            
           
             <v-col cols=11>
+              <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
               <v-row>
                 <div class="about-text">
                   <p>
@@ -19,10 +21,11 @@
                   </div>
                 </a>
               </v-row>
-
+            <v-img src="@/assets/Stern.png" class="bgimg-2 rotating"></v-img>
             </v-col>
+            
           </v-row>
-          <v-img src="@/assets/Stern.png" class="bgimg-2 rotating"></v-img>
+          
         </v-container>
     </div>
 </template>
@@ -37,27 +40,27 @@ export default {
 </script>
 <style scoped>
 .bgimg {
-  width: 480px;
-  max-height: 480px;
+  width: 40%;
+  height: 40%;
   position: absolute;
   top: 0;
-  right: 0;
+
   bottom: 0;
-  left: 0;
+  left: 1%;
   margin-top: 100px;
-  margin-left: 10%;
+
   z-index: 1;
 }
 .bgimg-2 {
-  width: 480px;
-  max-height: 480px;
+  width: 40%;
+  height: 40%;
   position: absolute;
-  top: 0;
+
   right: 0;
-  bottom: 0;
+  bottom: 1%;
   left: 0;
-  margin-top: 550px;
-  margin-left: 80%;
+  margin-top: 450px;
+  margin-left: 70%;
   z-index: 1;
 }
 .about-text {
