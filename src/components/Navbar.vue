@@ -10,7 +10,7 @@
       <v-spacer></v-spacer>
 
       <div v-if="!isMobile">
-        <router-link to="/about" class="navbar-btn  text-truncate" active-link="active">
+        <router-link to="/about" class="navbar-btn" active-link="active">
         <v-icon class="dot" color="#FF5808" size="20">mdi-circle</v-icon>ABOUT
         </router-link>
 
