@@ -1,11 +1,15 @@
 <template>
   <div id="app">
     <v-app>
+      
+      <v-content>
+      
+      <NavBar v-if="!isSplash"/>
+      <router-view v-if="!isSplash"></router-view>
+
       <splash-screen v-if="isSplash" :isSplash="isSplash"></splash-screen>
-    <v-main v-if="!isSplash">
-      <NavBar/>
-      <router-view></router-view>
-    </v-main>
+    </v-content>
+    <bottom-footer v-if="!isSplash"></bottom-footer>
   </v-app>
   </div>
 </template>
@@ -13,12 +17,14 @@
 <script>
 import NavBar from '@/components/Navbar.vue'
 import SplashScreen from '@/components/SplashScreen.vue'
+import BottomFooter from '@/components/Footer.vue'
 export default {
   name: 'App',
 
   components: {
     NavBar,
-    SplashScreen
+    SplashScreen,
+    BottomFooter
   },
 
   data: () => ({
