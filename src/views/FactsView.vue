@@ -1,16 +1,21 @@
 <template>
 
-      <v-container class="mr-5 ml-0 mb-5" style="max-width: 99% !important">
+      <v-container class="mr-5 ml-0 mb-5 mt-9 pt-9" style="max-width: 99% !important">
         <v-row>
-          <v-col cols=12>
+          <v-col class="mt-9" cols=12>
             <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
-            <div class="about-text">
-            <p>
-              With a finished script and an innovative idea, the core team came together in November 2020 and began developing the project. 
-              <br><span  style="font-family: Migra; color: #FF5808">Peak of Evolution</span> is a CG short film by students of the University of Applied Science Salzburg. Real filmed footage of the sets built in miniature scale is meets digital characters.
-            </p>
+            <div v-if="!storedLanguage" class="about-text">
+              <p>
+                With a finished script and an innovative idea, the core team came together in November 2020 and began developing the project. 
+                <br><span  style="font-family: Migra; color: #FF5808">Peak of Evolution</span> is a CG short film by students of the University of Applied Science Salzburg. Real filmed footage of the sets built in miniature scale is meets digital characters.
+              </p>
             </div>
-            
+            <div v-else class="about-text">
+              <p>
+                Mit einem fertigen Drehbuch und einer innovativen Idee fand sich das Kernteam Anfang November 2020 zusammen und begann mit der Projektentwicklung.
+                <br><span  style="font-family: Migra; color: #FF5808">Peak of Evolution</span> ist ein CG-Kurzfilm von Student*innen der FH Salzburg. Real gefilmtes Footage der im Miniatur-Maßstab gebauten Sets verbindet sich mit digitalen Charakteren.
+              </p>
+            </div>
             <v-img src="@/assets/Stern.png" class="bgimg-2 rotating"></v-img>
           </v-col>
         </v-row>
@@ -18,12 +23,16 @@
 
 </template>
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'ContactView',
-
+  
   data: () => ({
     
   }),
+  computed: {
+    ...mapState({storedLanguage: 'language'}),
+  },
 }
 </script>
 <style scoped>
@@ -35,7 +44,7 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-left: 70%;
   z-index: 1;
 }

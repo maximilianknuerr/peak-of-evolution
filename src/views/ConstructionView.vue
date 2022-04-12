@@ -8,8 +8,11 @@
           <p style="font-family: Migra; font-size: 96px;">
             Under Construction
           </p>
-          <p>
+          <p v-if="storedLanguage">
             Diese Seite wird gerade überarbeitet.
+          </p>
+          <p v-else>
+            This site is currently under construction.
           </p>
           </div>
           </v-row>
@@ -17,12 +20,16 @@
     </div>
 </template>
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'ConstructionView',
 
   data: () => ({
     
   }),
+  computed: {
+    ...mapState({storedLanguage: 'language'}),
+  },
 }
 </script>
 <style scoped>
@@ -37,12 +44,12 @@ export default {
 .about-text {
   position: absolute;
   font-size: 35px;
-  top: 0;
+  top: 40vh;
   right: 0;
-  bottom: 0;
+  bottom: 50px;
   left: 0;
   text-align: center;
-  margin-top: calc(20vh + 150px);
+  margin-top: 0px;
   z-index: 5;
 }
 

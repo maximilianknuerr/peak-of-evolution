@@ -8,7 +8,10 @@
               <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
               <v-row>
                 <div class="about-text">
-                  <p>
+                  <p v-if="storedLanguage">
+                    Gefällt dir was du siehst oder willst einfach mit uns quatschen? Schreib uns!
+                  </p>
+                  <p v-else>
                     Like what you see? Want to chat? Feel free to contact us!
                   </p>
                 </div>
@@ -28,18 +31,22 @@
         </v-container>
 </template>
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'ContactView',
 
   data: () => ({
     
   }),
+  computed: {
+    ...mapState({storedLanguage: 'language'}),
+  },
 }
 </script>
 <style scoped>
 .bgimg {
-  width: 40%;
-  height: 40%;
+  width: 40vh;
+  height: 40vh;
   position: absolute;
   top: 0;
 
@@ -50,15 +57,15 @@ export default {
   z-index: 1;
 }
 .bgimg-2 {
-  width: 40%;
-  height: 40%;
+  width: 40vh;
+  height: 40vh;
   position: absolute;
 
   right: 0;
-  bottom: 5%;
+  bottom: 50px;
   left: 0;
   margin-bottom: 5%;
-  margin-left: 70%;
+  margin-left: 70vw;
 
   z-index: 1;
 }
