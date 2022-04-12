@@ -35,7 +35,7 @@ export default {
 }
 
 .about-text {
-  position: relative;
+  position: absolute;
   font-size: 35px;
   top: 0;
   right: 0;

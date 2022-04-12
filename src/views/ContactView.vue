@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <v-container  class="mr-0" style="max-width: 100% !important;">
+        <v-container  class="mr-0 mb-7" style="max-width: 100% !important;">
           
           <v-row style="margin-top: 10%; margin-left: 15%">
             
@@ -27,7 +26,6 @@
           </v-row>
           
         </v-container>
-    </div>
 </template>
 <script>
 export default {
@@ -46,7 +44,7 @@ export default {
   top: 0;
 
   bottom: 0;
-  left: 1%;
+  left: 0;
   margin-top: 100px;
 
   z-index: 1;
@@ -57,10 +55,11 @@ export default {
   position: absolute;
 
   right: 0;
-  bottom: 1%;
+  bottom: 5%;
   left: 0;
-  margin-top: 450px;
+  margin-bottom: 5%;
   margin-left: 70%;
+
   z-index: 1;
 }
 .about-text {
@@ -88,36 +87,28 @@ export default {
 @media (max-width:600px) {
 
 .about-text {
-  margin-top: 200px;
+  margin-top: 0px;
   margin-left: 10%;
   margin-right: 5%;
 }
 
 .bgimg {
-  width: 70%;
-  height: 70%;
-  margin-top: 50px;
-  margin-left: 15%;
-  margin-right: 15%;
+  display: none;
 }
 
 .bgimg-2 {
-  width: 70%;
-  height: 70%;
-  margin-top: 50px;
-  margin-left: 15%;
-  margin-right: 15%;
+  display: none;
 }
 .email {
 
-  font-size: 20px;
+  font-size: 15px;
 }
 
 }
 
 @media (max-width:800px) {
 .email{
-  font-size: 30px;
+  font-size: 25px;
 }
 }
 

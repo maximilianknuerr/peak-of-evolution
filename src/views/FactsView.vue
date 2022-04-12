@@ -1,13 +1,13 @@
 <template>
-    <div>
-      <v-container class="mr-5 ml-0" style="max-width: 99% !important">
+
+      <v-container class="mr-5 ml-0 mb-5" style="max-width: 99% !important">
         <v-row>
           <v-col cols=12>
             <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
             <div class="about-text">
             <p>
               With a finished script and an innovative idea, the core team came together in November 2020 and began developing the project. 
-              <span  style="font-family: Migra; color: #FF5808">Peak of Evolution</span> is a CG short film by students of the University of Applied Science Salzburg. Real filmed footage of the sets built in miniature scale is meets digital characters.
+              <br><span  style="font-family: Migra; color: #FF5808">Peak of Evolution</span> is a CG short film by students of the University of Applied Science Salzburg. Real filmed footage of the sets built in miniature scale is meets digital characters.
             </p>
             </div>
             
@@ -15,7 +15,7 @@
           </v-col>
         </v-row>
       </v-container>
-    </div>
+
 </template>
 <script>
 export default {
@@ -47,8 +47,9 @@ export default {
   right: 0;
   bottom: 5%;
   left: 0;
+  margin-bottom: 5%;
+  margin-left: 0%;
 
-  margin-left: 5%;
   z-index: 1;
 }
 .about-text {
@@ -77,7 +78,7 @@ export default {
 
 .about-text {
   margin-top: 200px;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 5%;
 }
 
@@ -90,11 +91,7 @@ export default {
 }
 
 .bgimg-2 {
-  width: 70%;
-  height: 70%;
-  margin-top: 50px;
-  margin-left: 15%;
-  margin-right: 15%;
+display: none;
 }
 .email {
 
@@ -106,6 +103,11 @@ export default {
 @media (max-width:800px) {
 .email{
   font-size: 30px;
+}
+.about-text {
+  margin-top: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 }
 
