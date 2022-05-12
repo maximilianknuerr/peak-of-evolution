@@ -16,6 +16,8 @@
                 <br><span  style="font-family: Migra; color: #FF5808">Peak of Evolution</span> ist ein CG-Kurzfilm von Student*innen der FH Salzburg. Real gefilmtes Footage der im Miniatur-Maßstab gebauten Sets verbindet sich mit digitalen Charakteren.
               </p>
             </div>
+            <iframe
+            class="video" src="https://www.youtube.com/embed/3nLVVlumXpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
             <v-img src="@/assets/Stern.png" class="bgimg-2 rotating"></v-img>
           </v-col>
         </v-row>
@@ -49,17 +51,28 @@ export default {
   z-index: 1;
 }
 .bgimg-2 {
-  width: 40%;
-  height: 40%;
+  width: 35%;
+  height: 35%;
   position: absolute;
 
   right: 0;
-  bottom: 5%;
+  bottom: 0;
   left: 0;
-  margin-bottom: 5%;
-  margin-left: 0%;
+  
+  margin-bottom: 7%;
+  margin-left: -9%;
 
   z-index: 1;
+}
+.video {
+
+  margin-top: 35px;
+  left: 7vw;
+  margin-bottom: 24%;
+  width: 84vw;
+  height: 56vw;
+  position: relative;
+  z-index:9999999;
 }
 .about-text {
   position: relative;
@@ -69,7 +82,7 @@ export default {
   bottom: 0;
   left: 0;
   margin-top: 50px;
-  margin-left: calc(20% + 240px);
+  margin-left: calc(20% + 200px);
 
   z-index: 5;
 }
