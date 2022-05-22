@@ -1,11 +1,11 @@
 <template>
     <div>
-        <v-container>
+        <v-container style="max-width: 99% !important">
           <v-row class="justify-center">
           <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
           <div class="about-text">
 
-          <p style="font-family: Migra; font-size: 96px;">
+          <p class="construction">
             Under Construction
           </p>
           <p v-if="storedLanguage">
@@ -36,11 +36,14 @@ export default {
 .bgimg {
   width: 540px;
   max-height: 540px;
-  position: absolute;
+  position: fixed;
   margin-top: 20vh;
   z-index: 1;
 }
-
+.construction {
+  font-family: Migra;
+  font-size: 96px;
+}
 .about-text {
   position: absolute;
   font-size: 35px;
@@ -56,11 +59,15 @@ export default {
 @media (max-width:600px) {
 
 .about-text {
-  margin-top: 100px;
+  margin-top: 10px;
   margin-left: 5%;
   margin-right: 5%;
+  font-size: 20px;
 }
+.construction {
 
+  font-size: 50px;
+}
 .bgimg {
   width: 70%;
   height: 70%;

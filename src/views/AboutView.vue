@@ -59,7 +59,7 @@ export default {
 .bgimg {
   width: 40%;
   height: 40%;
-  position: absolute;
+  position: fixed;
   top: 150px;
 
   bottom: 0;

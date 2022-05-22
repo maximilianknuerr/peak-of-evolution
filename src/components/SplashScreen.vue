@@ -41,4 +41,11 @@ export default {
     visibility: hidden;
   }
 }
+@media screen and (max-width: 600px) {
+  .splash-text {
+    font-size: 80px;
+  }
+}
+  
+
 </style>

@@ -54,7 +54,10 @@ export default {
 </script>
 <style>
 .list{
+top: 100px;
 background-color: #EBE5D2;
+
+
 }
 
 .list-item{

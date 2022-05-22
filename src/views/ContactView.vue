@@ -1,13 +1,13 @@
 <template>
-        <v-container  class="mr-0 mb-7" style="max-width: 100% !important;">
+        <v-container  class="mr-0 mb-7" style="max-width: 100% !important; ">
           
-          <v-row style="margin-top: 10%; margin-left: 15%">
+          <v-row style="margin-top: 10%; margin-left: 15%;">
             
           
             <v-col cols=11>
               <v-img src="@/assets/Stern.png" class="bgimg rotating"></v-img>
               <v-row>
-                <div class="about-text">
+                <div class="about-text" style="margin-top: 100px;">
                   <p v-if="storedLanguage">
                     Gefällt dir was du siehst oder willst einfach mit uns quatschen? Schreib uns!
                   </p>
@@ -82,7 +82,7 @@ export default {
   z-index: 5;
 }
 .email {
-  z-index:9999999;
+  z-index:1;
   margin-top: 5vh;
 
   font-size: 50px;
