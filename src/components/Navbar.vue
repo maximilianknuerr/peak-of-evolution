@@ -35,7 +35,7 @@
       </v-btn>
     </v-app-bar>
     
-      <list-menu style="z-index:50; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16); position:fixed; width: 100vw" @clicked="menu = !menu" v-if="menu && isMobile"></list-menu>
+      <list-menu style="z-index:50; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16); position:absolute; width: 100vw" @clicked="menu = !menu" v-if="menu && isMobile"></list-menu>
     
     
     
